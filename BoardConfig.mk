@@ -36,3 +36,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # TWRP
 DEVICE_RESOLUTION := 720x1280
+
+# MKHW (for display color calibration - PCC via MDP)
+BOARD_USES_MOKEE_HARDWARE := true
+BOARD_HARDWARE_CLASS += hardware/mokee/mkhw
+
